@@ -1,0 +1,67 @@
+*{
+    font-family: Lato;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.row {
+	display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-bottom: 40px;
+    min-height: 120px;
+    
+}
+div.row:last-child {
+    margin-bottom: 0;
+}
+.metricbox {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+    text-align: center;
+    flex-basis: 155px;
+    background-color: white;
+    justify-content: space-between;
+}
+.logo {
+    background: white url(server-img.png) no-repeat;
+    background-position: center;
+}
+.nginx {
+    background: white url(nginx-logo.png) no-repeat;
+    padding-right: 10px;
+}
+.metric-label, .metric-value {
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-basis: 40px;
+    flex-flow: column;
+    padding-bottom: 15px;
+    font-size: 12pt;
+}
+.metric-label {
+    border-bottom: 2px solid #d7d7d7;
+    color: #76767e;
+}
+.metric-value {
+    color: #f35125;
+}
+
+div.metric {
+    display: flex;
+    flex-flow: column;
+    align-items: left;
+}
+.centered .metric-label, .centered .metric-value{
+    align-items: center;
+}
