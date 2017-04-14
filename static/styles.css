@@ -1,67 +1,66 @@
-*{
-    font-family: Lato;
-    margin: 0;
+/*Dashboard styles*/
+section {
+    display: flex; 
+/*    margin-bottom: 30px;*/
+    flex-wrap: wrap;
+    font-family: 'Lato', sans-serif;
+    font-size: 13pt;
 }
-
-body{
-    background: #eee;
+section:nth-child(2){
+    margin-left: 110px;
 }
-
-.wrapper{
-    width: 100%;
-    max-width: 960px;
+div.block {
+    background: white;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    /*flex:1;*/
+}
+div.block div {
+    /*color: black;*/
+    padding: 20px;
+    overflow: auto;
+}
+section .block:nth-child(2) div{
+    padding-left: 0px;
+    margin-left: 5px;
+}
+div.logo img {
     margin: 0 auto;
 }
-.row {
-	display: flex;
-    flex-wrap: wrap;
-    flex-grow: 1;
-    margin-bottom: 40px;
-    min-height: 120px;
-    
-}
-div.row:last-child {
-    margin-bottom: 0;
-}
-.metricbox {
-    display: flex;
-    flex-flow: column;
-    flex-grow: 1;
-    text-align: center;
-    flex-basis: 155px;
-    background-color: white;
-    justify-content: space-between;
-}
-.logo {
-    background: white url(server-img.png) no-repeat;
-    background-position: center;
-}
-.nginx {
-    background: white url(nginx-logo.png) no-repeat;
-    padding-right: 10px;
-}
-.metric-label, .metric-value {
-    display: flex;
-    align-items: left;
-    justify-content: center;
-    flex-basis: 40px;
-    flex-flow: column;
-    padding-bottom: 15px;
-    font-size: 12pt;
-}
-.metric-label {
-    border-bottom: 2px solid #d7d7d7;
-    color: #76767e;
-}
-.metric-value {
-    color: #f35125;
+main section:first-child div.logo{
+    margin-right: 50px;
 }
 
-div.metric {
-    display: flex;
-    flex-flow: column;
-    align-items: left;
+.block div:first-child, .block div:nth-child(3){
+    color: #76767e;
+    border-bottom: 2px solid #d7d7d7;
 }
-.centered .metric-label, .centered .metric-value{
+
+.block div:nth-child(2), div:nth-child(4) {
+    color:#f35125;
+}
+div.no-border {
+    justify-content: center;
     align-items: center;
+}
+.no-border div:first-child, .no-border div.graph {
+    border-bottom:0px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+.top-border div:first-child {
+    border-bottom:0px;
+    padding-bottom: 0px;
+    border-top: 2px solid #d7d7d7;
+}
+@media only screen and (max-width:639px){
+    section {
+        display: block;
+        text-align: center;
+        width:50%;
+        margin:0 auto;
+    }
 }
