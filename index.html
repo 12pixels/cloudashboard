@@ -21,7 +21,7 @@
                      Server IP
                   </div>
     
-                  <div ng-bind="server.ip"></div>
+                  <div ng-bind="server.ip">IP address</div>
     
              </div>
              <div class="block">
@@ -39,7 +39,7 @@
                      Kernel
                   </div>
     
-                  <div ng-bind="server.kernel">Another large number over here</div>
+                  <div ng-bind="server.kernel">kernel</div>
     
              </div>
              <div class="block">
@@ -48,7 +48,7 @@
                      Uptime
                   </div>
     
-                  <div ng-bind="server.uptime">There is another</div>
+                  <div ng-bind="server.uptime">uptime</div>
     
              </div>          
          </section>
@@ -56,18 +56,18 @@
         <section id="row">
              <div class="block no-border">
                 <div>Load Now</div>
-                <div ng-bind="server.loadnow">small number</div>
+                <div ng-bind="server.loadnow">load now</div>
                 <canvas id="Loadchart" height="200"></canvas>                 
              </div>
              <div class="block no-border" style=" justify-content: flex-start;">
                  <div>Load 5min</div>
-                 <div ng-bind="server.load5min">small</div>
+                 <div ng-bind="server.load5min">load 5min</div>
                  <div>Load 15min</div>
-                 <div ng-bind="server.load15min">small</div>
+                 <div ng-bind="server.load15min">load 15min</div>
              </div>
              <div class="block no-border">
                     <div>Total RAM</div>
-                    <div ng-bind="RAM.total"></div>
+                    <div ng-bind="RAM.total">RAM total</div>
                     <canvas id="RAMchart" height="200"></canvas>
              </div>     
          </section>
@@ -82,7 +82,7 @@
                      Version
                   </div>
     
-                  <div ng-bind="server.nginxversion">Avg. number</div>
+                  <div ng-bind="server.nginxversion">Version</div>
     
              </div>
              <div  class="block top-border">
@@ -91,7 +91,7 @@
                      Active Connections
                   </div>
     
-                  <div ng-bind="server.nginxactive">Small number</div>
+                  <div ng-bind="server.nginxactive">active connections</div>
     
              </div>
               <div class="block top-border">
@@ -100,7 +100,7 @@
                      Waiting Connections
                   </div>
     
-                  <div ng-bind="server.nginxwaiting">Small Number</div>
+                  <div ng-bind="server.nginxwaiting">waiting connections</div>
     
              </div>
               <div class="block top-border">
@@ -109,7 +109,7 @@
                      Total Requests
                   </div>
     
-                  <div ng-bind="server.nginxrequests">Small number</div>
+                  <div ng-bind="server.nginxrequests">total requests</div>
     
              </div>
          </section>    
